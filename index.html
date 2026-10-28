@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="O-ROSI privacy policy, terms of use, and support information."
+    />
+    <title>O-ROSI | Privacy &amp; Terms</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --background: #f5f5ef;
+        --surface: #fffef9;
+        --surface-soft: #edf1e8;
+        --text: #213c33;
+        --muted: #6d7a73;
+        --line: #dce3da;
+        --accent: #315f4b;
+        --accent-soft: #dceade;
+        --warning: #86623e;
+        --max-width: 780px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--background);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+        margin: 0;
+        overflow-wrap: anywhere;
+        word-break: normal;
+      }
+
+      [lang="ko"] {
+        word-break: keep-all;
+      }
+
+      [lang="ja"] {
+        line-break: strict;
+        overflow-wrap: anywhere;
+        word-break: normal;
+      }
+
+      a {
+        color: var(--accent);
+        overflow-wrap: anywhere;
+        text-underline-offset: 3px;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .page-shell {
+        margin: 0 auto;
+        max-width: var(--max-width);
+        padding: 20px 18px 72px;
+      }
+
+      .topbar {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+      }
+
+      .brand {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      .language-switcher {
+        background: #e8ece5;
+        border-radius: 999px;
+        display: flex;
+        gap: 3px;
+        padding: 4px;
+      }
+
+      .language-button {
+        background: transparent;
+        border: 0;
+        border-radius: 999px;
+        color: var(--muted);
+        cursor: pointer;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 7px 11px;
+      }
+
+      .language-button[aria-pressed="true"] {
+        background: var(--surface);
+        color: var(--accent);
+        box-shadow: 0 1px 4px rgba(30, 52, 43, 0.1);
+      }
+
+      .hero {
+        background: var(--surface-soft);
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        overflow: hidden;
+        padding: 34px 28px 30px;
+        position: relative;
+      }
+
+      .hero::after {
+        background: var(--accent-soft);
+        border-radius: 44% 56% 52% 48%;
+        content: "";
+        height: 170px;
+        opacity: 0.7;
+        position: absolute;
+        right: -72px;
+        top: -82px;
+        transform: rotate(18deg);
+        width: 170px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        margin: 0 0 8px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: clamp(28px, 8vw, 42px);
+        letter-spacing: -0.04em;
+        line-height: 1.2;
+        margin: 0;
+        max-width: 560px;
+      }
+
+      .hero-description {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 14px 0 0;
+        max-width: 580px;
+      }
+
+      .metadata {
+        color: var(--muted);
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        gap: 8px 16px;
+        margin-top: 18px;
+      }
+
+      .section-nav {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 16px 0 26px;
+      }
+
+      .section-nav a {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        font-size: 13px;
+        font-weight: 700;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        padding: 12px 14px;
+        text-decoration: none;
+        word-break: normal;
+      }
+
+      .policy-section {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        margin-top: 14px;
+        padding: 26px 24px;
+      }
+
+      h2 {
+        font-size: 22px;
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+        margin: 0 0 16px;
+      }
+
+      h3 {
+        font-size: 16px;
+        line-height: 1.45;
+        margin: 28px 0 8px;
+      }
+
+      p,
+      li {
+        color: #43564e;
+        font-size: 14px;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .summary-box,
+      .health-notice {
+        border-radius: 18px;
+        margin: 16px 0 6px;
+        padding: 16px 18px;
+      }
+
+      .summary-box {
+        background: #edf4ee;
+        border: 1px solid #d6e6da;
+      }
+
+      .health-notice {
+        background: #faf3e8;
+        border: 1px solid #eadbc5;
+        color: var(--warning);
+      }
+
+      .summary-box p,
+      .health-notice p {
+        margin: 0;
+      }
+
+      .contact-card {
+        align-items: center;
+        background: var(--accent);
+        border-radius: 22px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        padding: 22px 24px;
+      }
+
+      .contact-card h2,
+      .contact-card p {
+        color: white;
+        margin: 0;
+      }
+
+      .contact-card p {
+        font-size: 12px;
+        margin-top: 5px;
+        opacity: 0.78;
+      }
+
+      .contact-card a {
+        background: white;
+        border-radius: 999px;
+        color: var(--accent);
+        flex-shrink: 0;
+        font-size: 12px;
+        font-weight: 800;
+        margin-left: 16px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        padding: 10px 14px;
+        text-decoration: none;
+        word-break: break-all;
+      }
+
+      .footer {
+        color: var(--muted);
+        font-size: 11px;
+        margin-top: 28px;
+        text-align: center;
+      }
+
+      .language-panel {
+        display: block;
+      }
+
+      .js .language-panel {
+        display: none;
+      }
+
+      .js .language-panel.is-active {
+        display: block;
+      }
+
+      @media (max-width: 560px) {
+        .page-shell {
+          padding-left: 14px;
+          padding-right: 14px;
+        }
+
+        .hero,
+        .policy-section {
+          border-radius: 22px;
+          padding-left: 19px;
+          padding-right: 19px;
+        }
+
+        .contact-card {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .contact-card a {
+          margin: 14px 0 0;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .section-nav {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="topbar">
+        <div class="brand">O-ROSI</div>
+        <div class="language-switcher" aria-label="Language">
+          <button class="language-button" data-language="ko" aria-pressed="true">KR</button>
+          <button class="language-button" data-language="en" aria-pressed="false">EN</button>
+          <button class="language-button" data-language="ja" aria-pressed="false">JP</button>
+        </div>
+      </div>
+
+      <section class="language-panel is-active" data-panel="ko" lang="ko">
+        <header class="hero">
+          <p class="eyebrow">Privacy &amp; Terms</p>
+          <h1>개인정보처리방침과 이용 안내</h1>
+          <p class="hero-description">
+            O-ROSI가 어떤 데이터를 기기에 저장하고, YouTube 기능이 어떻게 연결되는지 안내합니다.
+          </p>
+          <div class="metadata">
+            <span>시행일: 2026년 10월 28일</span>
+            <span>정책 버전: 1.0</span>
+          </div>
+        </header>
+
+        <nav class="section-nav" aria-label="문서 바로가기">
+          <a href="#privacy-ko">개인정보처리방침</a>
+          <a href="#terms-ko">서비스 이용 안내</a>
+        </nav>
+
+        <article class="policy-section" id="privacy-ko">
+          <h2>개인정보처리방침</h2>
+          <div class="summary-box">
+            <p>
+              <strong>요약:</strong> O-ROSI는 계정을 만들지 않으며 자체 서버, 광고 또는 분석 도구를 운영하지 않습니다. 루틴과 실행 기록은 사용자의 기기에 저장됩니다.
+            </p>
+          </div>
+
+          <h3>1. 적용 대상</h3>
+          <p>
+            본 개인정보처리방침은 O-ROSI 모바일 애플리케이션에 적용됩니다. O-ROSI는 좋아하는 콘텐츠와 함께 사용자가 만든 움직임 루틴을 실행하고 기록하도록 돕는 타이머 앱입니다.
+          </p>
+
+          <h3>2. O-ROSI가 처리하는 정보</h3>
+          <ul>
+            <li><strong>루틴 데이터:</strong> 루틴 이름, 동작 이름, 실행 시간, 준비 시간, 음성 언어 및 주간 목표</li>
+            <li><strong>실행 기록:</strong> 실행 날짜, 완주 또는 부분 실행 상태, 실행 시간과 달성 기록</li>
+            <li><strong>앱 설정:</strong> 표시 언어, 음성·진동 설정, 선택한 동그라미 디자인 및 온보딩 완료 여부</li>
+            <li><strong>YouTube 입력:</strong> 사용자가 직접 입력한 YouTube URL 또는 영상 ID와 사용자가 지정한 Cue 정보</li>
+          </ul>
+          <p>
+            위 정보는 앱 기능 제공을 위해 사용자의 기기에 로컬로 저장됩니다. O-ROSI 개발자는 이 정보를 자체 서버로 전송하거나 열람하지 않습니다.
+          </p>
+
+          <h3>3. 권한과 기기 기능</h3>
+          <ul>
+            <li><strong>알림:</strong> 앱 밖에서도 동작 전환 시점을 안내하는 로컬 알림을 예약하기 위해 사용합니다.</li>
+            <li><strong>진동·음성·PiP:</strong> 루틴 실행 안내와 작은 화면 표시를 위해 기기 기능을 사용합니다.</li>
+            <li><strong>파일 선택 및 공유:</strong> 사용자가 명시적으로 선택한 경우에만 백업 파일을 가져오거나 내보내기 위해 사용합니다.</li>
+          </ul>
+
+          <h3>4. YouTube 및 제3자 서비스</h3>
+          <p>
+            O-ROSI의 “YouTube 영상에서 만들기” 기능은 YouTube API Services 또는 임베디드 YouTube 플레이어를 사용합니다. O-ROSI 개발자는 사용자의 YouTube 계정 정보나 시청 기록을 수집하지 않습니다. 다만 영상을 불러오는 과정에서 YouTube와 Google이 IP 주소, 기기 정보 또는 쿠키와 유사한 정보를 처리할 수 있으며, 해당 처리는 각 서비스의 정책을 따릅니다.
+          </p>
+          <ul>
+            <li><a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube 이용약관</a></li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a></li>
+          </ul>
+
+          <h3>5. 제3자 제공·판매·광고</h3>
+          <p>
+            O-ROSI 개발자는 사용자 정보를 판매하지 않으며, 맞춤형 광고나 사용자 추적 분석 도구를 사용하지 않습니다. 사용자가 백업 파일을 다른 앱이나 클라우드 서비스로 공유하면 해당 서비스의 정책이 적용됩니다.
+          </p>
+
+          <h3>6. 보관과 삭제</h3>
+          <p>
+            앱 데이터는 사용자의 기기에 보관됩니다. 사용자는 앱에서 지원되는 삭제 기능을 이용하거나, 기기 설정에서 O-ROSI의 앱 데이터를 삭제하거나, 앱을 제거하여 로컬 데이터를 삭제할 수 있습니다. 사용자가 외부에 저장한 백업 파일은 해당 저장 위치에서 직접 삭제해야 합니다. O-ROSI는 자체 서버에 사용자 계정을 보유하지 않으므로 개발자가 기기의 데이터를 원격으로 조회하거나 삭제할 수 없습니다.
+          </p>
+
+          <h3>7. 보안</h3>
+          <p>
+            O-ROSI는 운영체제의 앱 저장 영역을 사용하고, 가져오는 백업 파일의 형식과 크기를 검증합니다. 다만 어떠한 저장 방식도 모든 위험으로부터 절대적인 안전을 보장할 수는 없습니다. 기기 잠금과 운영체제 업데이트를 유지하고 백업 파일을 안전한 장소에 보관해 주세요.
+          </p>
+
+          <h3>8. 아동의 개인정보</h3>
+          <p>
+            O-ROSI는 아동을 주된 대상으로 설계된 서비스가 아니며, 개발자가 아동의 개인정보를 고의로 수집하지 않습니다.
+          </p>
+
+          <h3>9. 정책 변경</h3>
+          <p>
+            앱 기능이나 관련 법령·정책이 변경되면 본 방침을 수정할 수 있습니다. 중요한 변경은 이 페이지의 시행일을 갱신하여 안내합니다.
+          </p>
+        </article>
+
+        <article class="policy-section" id="terms-ko">
+          <h2>서비스 이용 안내</h2>
+
+          <h3>1. 서비스 목적</h3>
+          <p>
+            O-ROSI는 사용자가 직접 구성한 루틴의 시간과 순서를 안내하고 실행 기록을 기기에 저장하는 보조 도구입니다. 동작의 안전성이나 운동 효과를 보증하지 않습니다.
+          </p>
+
+          <div class="health-notice">
+            <p>
+              <strong>건강 관련 안내:</strong> O-ROSI는 의료기기가 아니며 질병을 진단·치료·치유·예방하지 않습니다. 통증, 어지러움 또는 불편함이 생기면 즉시 사용을 중단하고 필요한 경우 의료 전문가와 상담하세요.
+            </p>
+          </div>
+
+          <h3>2. 사용자 책임</h3>
+          <p>
+            사용자는 자신의 건강 상태와 환경에 적합한 루틴인지 판단해야 합니다. YouTube 영상 등을 참고하여 Cue를 만들 때에는 동작 이름, 순서 및 시간을 직접 확인해야 합니다.
+          </p>
+
+          <h3>3. YouTube 기능</h3>
+          <p>
+            YouTube 기능을 사용하면 사용자는 <a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube 이용약관</a>의 적용에 동의합니다. 영상과 관련 콘텐츠의 권리는 해당 권리자에게 있으며, O-ROSI는 영상을 다운로드하거나 재배포하지 않습니다. 영상 소유자의 설정이나 YouTube 정책에 따라 일부 영상은 앱에서 재생되지 않을 수 있습니다.
+          </p>
+
+          <h3>4. 서비스 변경과 책임 제한</h3>
+          <p>
+            운영체제 또는 제3자 서비스 변경에 따라 일부 기능이 제한되거나 변경될 수 있습니다. 관련 법령이 허용하는 범위에서 O-ROSI 개발자는 사용자 작성 루틴, 제3자 콘텐츠 또는 사용자의 부적절한 이용으로 발생한 손해에 대해 책임을 지지 않습니다.
+          </p>
+        </article>
+
+        <section class="contact-card">
+          <div>
+            <h2>문의</h2>
+            <p>개인정보·서비스 관련 문의</p>
+          </div>
+          <a href="mailto:YOUR_SUPPORT_EMAIL">YOUR_SUPPORT_EMAIL</a>
+        </section>
+      </section>
+
+      <section class="language-panel" data-panel="en" lang="en">
+        <header class="hero">
+          <p class="eyebrow">Privacy &amp; Terms</p>
+          <h1>Privacy Policy &amp; Terms of Use</h1>
+          <p class="hero-description">
+            Learn what O-ROSI stores on your device and how its YouTube feature works.
+          </p>
+          <div class="metadata">
+            <span>Effective date: October 28, 2026</span>
+            <span>Policy version: 1.0</span>
+          </div>
+        </header>
+
+        <nav class="section-nav" aria-label="Document navigation">
+          <a href="#privacy-en">Privacy Policy</a>
+          <a href="#terms-en">Terms of Use</a>
+        </nav>
+
+        <article class="policy-section" id="privacy-en">
+          <h2>Privacy Policy</h2>
+          <div class="summary-box">
+            <p>
+              <strong>Summary:</strong> O-ROSI does not require an account and does not operate its own server, advertising system, or analytics service. Your routines and practice history are stored on your device.
+            </p>
+          </div>
+
+          <h3>1. Scope</h3>
+          <p>
+            This Privacy Policy applies to the O-ROSI mobile application. O-ROSI is a timer that helps users perform and record self-created movement routines while enjoying other content.
+          </p>
+
+          <h3>2. Information processed by O-ROSI</h3>
+          <ul>
+            <li><strong>Routine data:</strong> routine and step names, durations, transition times, voice language, and weekly goals</li>
+            <li><strong>Practice history:</strong> dates, completed or partial status, practice duration, and achievement history</li>
+            <li><strong>App settings:</strong> display language, voice and vibration choices, selected circle design, and onboarding status</li>
+            <li><strong>YouTube input:</strong> YouTube URLs or video IDs entered by the user and Cue information created by the user</li>
+          </ul>
+          <p>
+            This information is stored locally on the user's device to provide app functionality. The O-ROSI developer does not transmit it to or access it through an O-ROSI server.
+          </p>
+
+          <h3>3. Permissions and device features</h3>
+          <ul>
+            <li><strong>Notifications:</strong> used to schedule local step-change cues outside the app.</li>
+            <li><strong>Vibration, speech, and PiP:</strong> used to guide routines and show the compact player.</li>
+            <li><strong>File selection and sharing:</strong> used only when the user chooses to import or export a backup file.</li>
+          </ul>
+
+          <h3>4. YouTube and third-party services</h3>
+          <p>
+            O-ROSI's “Create from YouTube” feature uses YouTube API Services or an embedded YouTube player. The O-ROSI developer does not collect the user's YouTube account information or viewing history. When a video is loaded, YouTube and Google may process information such as an IP address, device information, or cookie-like identifiers under their own policies.
+          </p>
+          <ul>
+            <li><a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube Terms of Service</a></li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          </ul>
+
+          <h3>5. Sharing, sale, and advertising</h3>
+          <p>
+            The O-ROSI developer does not sell user information and does not use personalized advertising or user-tracking analytics. If a user shares a backup file with another app or cloud service, that service's policies apply.
+          </p>
+
+          <h3>6. Retention and deletion</h3>
+          <p>
+            App data remains on the user's device. Users may use available in-app deletion controls, clear O-ROSI app data in device settings, or uninstall the app to remove local data. Backup files saved outside the app must be deleted by the user from their storage location. Because O-ROSI does not maintain user accounts on its own server, the developer cannot remotely view or delete data stored on a user's device.
+          </p>
+
+          <h3>7. Security</h3>
+          <p>
+            O-ROSI uses the operating system's app storage and validates the format and size of imported backup files. No storage method can guarantee absolute security. Keep your device locked and updated, and store backup files securely.
+          </p>
+
+          <h3>8. Children's privacy</h3>
+          <p>
+            O-ROSI is not designed primarily for children, and the developer does not knowingly collect children's personal information.
+          </p>
+
+          <h3>9. Changes to this policy</h3>
+          <p>
+            This policy may be updated when app functionality or applicable requirements change. Material changes will be indicated by updating the effective date on this page.
+          </p>
+        </article>
+
+        <article class="policy-section" id="terms-en">
+          <h2>Terms of Use</h2>
+
+          <h3>1. Purpose</h3>
+          <p>
+            O-ROSI is a supporting tool that guides the timing and order of user-created routines and stores practice history on the device. It does not guarantee the safety or effectiveness of any movement.
+          </p>
+
+          <div class="health-notice">
+            <p>
+              <strong>Health disclaimer:</strong> O-ROSI is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. Stop using the app if you experience pain, dizziness, or discomfort, and consult a qualified healthcare professional when appropriate.
+            </p>
+          </div>
+
+          <h3>2. User responsibility</h3>
+          <p>
+            Users are responsible for determining whether a routine is suitable for their health and environment. When creating Cues from a YouTube video or other source, users must verify step names, order, and timing themselves.
+          </p>
+
+          <h3>3. YouTube features</h3>
+          <p>
+            By using a YouTube feature, the user agrees to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube Terms of Service</a>. Rights to videos and related content belong to their respective owners. O-ROSI does not download or redistribute videos. Some videos may be unavailable in the app due to the owner's settings or YouTube policies.
+          </p>
+
+          <h3>4. Service changes and limitation of liability</h3>
+          <p>
+            Features may be limited or changed due to operating-system or third-party-service changes. To the extent permitted by law, the O-ROSI developer is not responsible for loss arising from user-created routines, third-party content, or improper use of the app.
+          </p>
+        </article>
+
+        <section class="contact-card">
+          <div>
+            <h2>Contact</h2>
+            <p>Privacy and service inquiries</p>
+          </div>
+          <a href="mailto:YOUR_SUPPORT_EMAIL">YOUR_SUPPORT_EMAIL</a>
+        </section>
+      </section>
+
+      <section class="language-panel" data-panel="ja" lang="ja">
+        <header class="hero">
+          <p class="eyebrow">Privacy &amp; Terms</p>
+          <h1>プライバシーポリシーと利用案内</h1>
+          <p class="hero-description">
+            O-ROSIが端末に保存するデータと、YouTube機能の仕組みについて説明します。
+          </p>
+          <div class="metadata">
+            <span>施行日：2026年10月28日</span>
+            <span>ポリシーバージョン：1.0</span>
+          </div>
+        </header>
+
+        <nav class="section-nav" aria-label="文書ナビゲーション">
+          <a href="#privacy-ja">プライバシーポリシー</a>
+          <a href="#terms-ja">利用規約</a>
+        </nav>
+
+        <article class="policy-section" id="privacy-ja">
+          <h2>プライバシーポリシー</h2>
+          <div class="summary-box">
+            <p>
+              <strong>概要：</strong>O-ROSIはアカウントを必要とせず、独自のサーバー、広告、アクセス解析サービスを運営していません。ルーティンと実践記録は利用者の端末に保存されます。
+            </p>
+          </div>
+
+          <h3>1. 適用範囲</h3>
+          <p>
+            本プライバシーポリシーは、O-ROSIモバイルアプリに適用されます。O-ROSIは、好きなコンテンツを楽しみながら、利用者が作成した動きのルーティンを実行・記録するためのタイマーアプリです。
+          </p>
+
+          <h3>2. O-ROSIが処理する情報</h3>
+          <ul>
+            <li><strong>ルーティンデータ：</strong>ルーティン名、動作名、実行時間、準備時間、音声言語、週間目標</li>
+            <li><strong>実践記録：</strong>実行日、完了・部分実践の状態、実行時間、達成記録</li>
+            <li><strong>アプリ設定：</strong>表示言語、音声・振動設定、選択したサークルデザイン、オンボーディング完了状況</li>
+            <li><strong>YouTube入力：</strong>利用者が入力したYouTube URLまたは動画ID、および利用者が作成したCue情報</li>
+          </ul>
+          <p>
+            これらの情報は、アプリ機能を提供するために利用者の端末内に保存されます。O-ROSI開発者が独自サーバーへ送信したり、閲覧したりすることはありません。
+          </p>
+
+          <h3>3. 権限と端末機能</h3>
+          <ul>
+            <li><strong>通知：</strong>アプリ外で動作切り替えを知らせるローカル通知の予約に使用します。</li>
+            <li><strong>振動・音声・PiP：</strong>ルーティン実行の案内と小画面表示に使用します。</li>
+            <li><strong>ファイル選択・共有：</strong>利用者が明示的に選択した場合に限り、バックアップファイルの読み込み・書き出しに使用します。</li>
+          </ul>
+
+          <h3>4. YouTubeおよび第三者サービス</h3>
+          <p>
+            O-ROSIの「YouTube動画から作成」機能は、YouTube API Servicesまたは埋め込みYouTubeプレーヤーを使用します。O-ROSI開発者は、利用者のYouTubeアカウント情報や視聴履歴を収集しません。ただし、動画の読み込み時にYouTubeおよびGoogleがIPアドレス、端末情報、Cookieに類する情報を各社のポリシーに基づいて処理する場合があります。
+          </p>
+          <ul>
+            <li><a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube利用規約</a></li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Googleプライバシーポリシー</a></li>
+          </ul>
+
+          <h3>5. 第三者提供・販売・広告</h3>
+          <p>
+            O-ROSI開発者は利用者情報を販売せず、パーソナライズ広告や利用者追跡のための解析ツールを使用しません。利用者がバックアップファイルを他のアプリやクラウドサービスへ共有した場合は、そのサービスのポリシーが適用されます。
+          </p>
+
+          <h3>6. 保管と削除</h3>
+          <p>
+            アプリデータは利用者の端末に保存されます。アプリ内で利用可能な削除機能、端末設定からのO-ROSIアプリデータ削除、またはアプリのアンインストールにより、ローカルデータを削除できます。アプリ外に保存したバックアップファイルは、保存先から利用者自身が削除する必要があります。O-ROSIは独自サーバーに利用者アカウントを保持しないため、開発者が端末内のデータを遠隔で閲覧・削除することはできません。
+          </p>
+
+          <h3>7. セキュリティ</h3>
+          <p>
+            O-ROSIはOSのアプリ保存領域を使用し、読み込むバックアップファイルの形式とサイズを検証します。ただし、いかなる保存方式も絶対的な安全性を保証するものではありません。端末のロックとOSの更新を維持し、バックアップファイルを安全な場所に保管してください。
+          </p>
+
+          <h3>8. 子どものプライバシー</h3>
+          <p>
+            O-ROSIは子どもを主な対象として設計されたサービスではなく、開発者が子どもの個人情報を意図的に収集することはありません。
+          </p>
+
+          <h3>9. ポリシーの変更</h3>
+          <p>
+            アプリ機能または関連法令・ポリシーの変更に伴い、本ポリシーを更新する場合があります。重要な変更は、本ページの施行日を更新してお知らせします。
+          </p>
+        </article>
+
+        <article class="policy-section" id="terms-ja">
+          <h2>利用規約</h2>
+
+          <h3>1. サービスの目的</h3>
+          <p>
+            O-ROSIは、利用者が作成したルーティンの時間と順序を案内し、実践記録を端末に保存する補助ツールです。動作の安全性や運動効果を保証するものではありません。
+          </p>
+
+          <div class="health-notice">
+            <p>
+              <strong>健康に関する注意：</strong>O-ROSIは医療機器ではなく、疾病の診断・治療・治癒・予防を目的とするものではありません。痛み、めまい、不快感が生じた場合は直ちに使用を中止し、必要に応じて医療専門家に相談してください。
+            </p>
+          </div>
+
+          <h3>2. 利用者の責任</h3>
+          <p>
+            利用者は、自身の健康状態や環境に適したルーティンであるかを判断する必要があります。YouTube動画などを参考にCueを作成する場合、動作名、順序、時間を利用者自身で確認してください。
+          </p>
+
+          <h3>3. YouTube機能</h3>
+          <p>
+            YouTube機能を使用することにより、利用者は<a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube利用規約</a>に拘束されることに同意します。動画および関連コンテンツの権利は各権利者に帰属し、O-ROSIは動画をダウンロードまたは再配布しません。動画所有者の設定またはYouTubeのポリシーにより、アプリ内で再生できない場合があります。
+          </p>
+
+          <h3>4. サービス変更と責任制限</h3>
+          <p>
+            OSまたは第三者サービスの変更により、一部機能が制限・変更される場合があります。法令で認められる範囲において、O-ROSI開発者は、利用者が作成したルーティン、第三者コンテンツ、または不適切な利用により生じた損害について責任を負いません。
+          </p>
+        </article>
+
+        <section class="contact-card">
+          <div>
+            <h2>お問い合わせ</h2>
+            <p>プライバシー・サービスに関するお問い合わせ</p>
+          </div>
+          <a href="mailto:YOUR_SUPPORT_EMAIL">YOUR_SUPPORT_EMAIL</a>
+        </section>
+      </section>
+
+      <p class="footer">© 2026 O-ROSI</p>
+    </main>
+
+    <script>
+      const supportedLanguages = ["ko", "en", "ja"];
+      const browserLanguage = (navigator.language || "ko").slice(0, 2);
+      const initialLanguage = supportedLanguages.includes(browserLanguage)
+        ? browserLanguage
+        : "en";
+
+      function selectLanguage(language) {
+        document.documentElement.lang = language;
+        document.querySelectorAll("[data-panel]").forEach((panel) => {
+          panel.classList.toggle("is-active", panel.dataset.panel === language);
+        });
+        document.querySelectorAll("[data-language]").forEach((button) => {
+          button.setAttribute(
+            "aria-pressed",
+            String(button.dataset.language === language)
+          );
+        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      selectLanguage(initialLanguage);
+
+      document.querySelectorAll("[data-language]").forEach((button) => {
+        button.addEventListener("click", () => {
+          selectLanguage(button.dataset.language);
+        });
+      });
+    </script>
+  </body>
+</html>
